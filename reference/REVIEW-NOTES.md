@@ -1,0 +1,71 @@
+# Catalogue review notes
+
+Generated 2026-11-05.
+
+## Flags (45)
+- Cefdron-O Tab.: Listed in the printed catalogue but not in the Excel "new list": composition and packing pending verification.
+- Telimac Beta 25: Listed in the printed catalogue but not in the Excel "new list": composition and packing pending verification.
+- Telimac Beta 50: Listed in the printed catalogue but not in the Excel "new list": composition and packing pending verification.
+- Sedam-LC Syrup: Listed in the printed catalogue but not in the Excel "new list": composition and packing pending verification.
+- Sedam-LC Tab.: Listed in the printed catalogue but not in the Excel "new list": composition and packing pending verification.
+- Bemowa Mouthwash: Listed in the printed catalogue but not in the Excel "new list": composition and packing pending verification.
+- Maate VG2 Tab.: Listed in the printed catalogue but not in the Excel "new list": composition and packing pending verification.
+- Lucimac 10g (#41): In Excel but not in the printed category list – assigned to Anti Fungal (luliconazole); confirm.
+- Lucimac 20g (#42): In Excel but not in the printed category list – assigned to Anti Fungal (luliconazole); confirm.
+- Defzo 12 Tab.: Listed in the printed catalogue but not in the Excel "new list": composition and packing pending verification.
+- Delphi-L PFS Inj.: Listed in the printed catalogue but not in the Excel "new list": composition and packing pending verification.
+- Delphi-L-NT Tab.: Listed in the printed catalogue but not in the Excel "new list": composition and packing pending verification.
+- Cefdron Dry Sy. (#13): Printed catalogue lists Cefdron Dry Sy. under Neuropathy; it is an antibiotic (cefpodoxime) and also appears under Antibiotics. Category assignment needs confirmation.
+- Name differs: printed "Softgel : Delphi-L Plus Cap." vs Excel #26 "Delphi-L Plus Cap.". Printed name displayed.
+- Name differs: printed "Delphi-L Sy. 100 ml" vs Excel #22 "Delphi-L 100 ml Sy.". Printed name displayed.
+- Name differs: printed "Delphi-L Sy. 200 ml" vs Excel #23 "Delphi-L 200 ml Sy.". Printed name displayed.
+- Name differs: printed "Slazer Powder (Chocolate)" vs Excel #72 "Slazer Powder DHA". Printed name displayed.
+- Slazer Powder (Chocolate) (#72): Printed catalogue says "Slazer Powder (Chocolate)"; Excel says "Slazer Powder DHA" (Whey Protein with Vitamins, Minerals & DHA). Excel composition shown; confirm flavour/variant.
+- Norton Inj. (#49): In Excel but not in the printed category list – assigned to Analgesic & Anti Inflammatory (diclofenac); confirm.
+- Vector Tab. (#78): In Excel but not in the printed category list – assigned to Analgesic & Anti Inflammatory (serratiopeptidase); confirm.
+- Name differs: printed "Sedam AC Sus." vs Excel #71 "Sedam-AC Susp". Printed name displayed.
+- Name differs: printed "Sedam AC Tab." vs Excel #70 "Sedam-AC". Printed name displayed.
+- "Cefdron Dry Sy." appears 2× (antibiotics / 30 ml; neuropathy / 30 ml). Kept as separate entries.
+- "McSTAT Tab." appears 2× (anti-fungal / 1 x 1; anti-fungal / 1x2). Kept as separate entries.
+- "Norton Linimentum" appears 2× (analgesic-oil / 30 ml; analgesic-oil / 60 ml). Kept as separate entries.
+- Cefdron CV Dry Sy. (#12): source spells "Proxetile" (likely "Proxetil"). Preserved.
+- Retel-S 1500 mg Inj. (#65): source spells "Sulbactum" (likely "Sulbactam"). Preserved.
+- Retel-S 375 mg (#66): source spells "Sulbactum" (likely "Sulbactam"). Preserved.
+- Telimac-3D (#76): source spells "Telimsartan" (likely "Telmisartan"). Preserved.
+- Macnari Sy. (#46): source spells "Utrine" (likely "Uterine"). Preserved.
+- Delphi-L Tab. (#27): source spells "Nicinamide" (likely "Nicotinamide"). Preserved.
+- Femac-XT Sy. (#28): source spells "Ferrour" (likely "Ferrous"). Preserved.
+- Femac-XT Tab. (#29): source spells "Ferrour" (likely "Ferrous"). Preserved.
+- Femac-XT Tab. (#29): source spells "Cynocobalamin" (likely "Cyanocobalamin"). Preserved.
+- Ibuprom Sus. (#32): source spells "Hydrocloride" (likely "Hydrochloride"). Preserved.
+- Pame-D (#77): source spells "Rotoside" (likely "Rutoside"). Preserved.
+- Lester-P Tab. (#35): source spells "Aceclofenace" (likely "Aceclofenac"). Preserved.
+- Lester-SP Tab. (#36): source spells "Aceclofenace" (likely "Aceclofenac"). Preserved.
+- Maate G2 Tab. appears under Antibiotics in the printed list; kept under Anti Diabetic (composition glimepiride + metformin).
+- Retel-S 1500 mg Inj.: Excel composition "Ceftriaxone + Sulbactum 1.5mg" (unit likely wrong). Preserved.
+- Retel-S 375 mg: no "Inj." in name and strength 375 mg conflicts with composition "…Sulbactum 750mg". Preserved.
+- Cefdron Dry Sy.: Excel composition reads "Cefpodoxime proxetil 5ml" (no mg strength). Preserved.
+- Delphi-L Inj.: Excel composition is truncated ("…Nicotinamide", no strengths). Preserved.
+- Hungermac Sy. placed in Nutraceuticals per printed list.
+- No product in the printed lists has a price on this site; the PTR + VAT sheet was not read.
+
+## Old list vs new list
+- Old list only (legacy, not published): Azam-CX 250 mg Tab. (10 x 10) – Azithromycin 250mg + Cefixime 200mg
+- Old list only (legacy, not published): Azam-CX KID Tab. (10 x 10) – Azithromycin 125mg + Cefixime 100mg
+- Composition differs for Delphi-L Tab.: old "Methylcobalamin 500mcg, Thiamine Mononitrate 10mg, Pyridoxine HCL 3MG, Nicinamide50mg, Calcium Panthothenate 50mg Light Magnesium Oxide 10mg, L Glutamic Acid 100mg, Excipients q.s" vs new "Methylcobalamin 500mcg, Thiamine Mononitrate 10mg, Pyridoxine HCL 3MG, Nicinamide50mg, Calcium Panthothenate 50mg Light Magnesium Oxide 10mg, Excipients q.s" (new list used)
+- Composition differs for Femac-XT Sy.: old "Ferrour Ascorbate 100mg +Folic Acid 1.5mg +Zinc Sulphate 61.8mg" vs new "Ferrour Ascorbate 100mg +Folic Acid 1.5mg" (new list used)
+- Composition differs for Femac-XT Tab.: old "Ferrour Ascorbate 100mg +Folic Acid 1.5mg +Zinc Sulphate 61.8mg" vs new "Ferrour Ascorbate 100mg +Folic Acid 1.5mg +Zinc Sulphate 61.8mg+ Cynocobalamin 15 mcg" (new list used)
+- Composition differs for Harison-Z Sy.: old "Protein Hydrolysate+Vit B complex+Iron Choline citrate+Magenesium Chloride+Manganese Chloride + Zinc" vs new "Multivitamin, Multimineral, Amino Acids with Lycopene & Taurine Syp" (new list used)
+- Composition differs for Ibuprom Sus.: old "Ibuprofen 100mg + Paracetamol 125mg + Promethazine HCL 5mg" vs new "Paracetamol 125mg Promethazine Hydrocloride 5mg, Ibuprofen 100mg" (new list used)
+- Composition differs for Logistic-250 DT: old "Amxycillin 250mg" vs new "Amoxycillin 250mg" (new list used)
+- Composition differs for Logistic-CV 625: old "Amxycillin 500mg + Clavulanic acid 125mg" vs new "Amoxycillin 500mg + Clavulanic acid 125mg" (new list used)
+- Old list only (legacy, not published): McSTAT Tab. (10 x 1) – Fluconazole 150mg
+- Old list only (legacy, not published): Radiant-AT (60 mg) – Atresunate 60mg
+- Old list only (legacy, not published): Retel 125 mg Inj. (125 mg) – Ceftriaxone 125mg
+- Composition differs for Sedam Sy.: old "Bromhexine HCS 4mg+Cetirizine 2.5mg +Phenylrphrine 5mg +Guiphenesin 50mg+Menthol 1mg" vs new "Ambroxol Hydrochloride IP 15 mg, Guaiphenesin IP 50 mg, Chlorpheniramine Maleate IP 2 mg, Phenylephrine Hydrochloride IP 5 mg, Menthol IP 1 mg Colour: Ponceau 4R" (new list used)
+- Old list only (legacy, not published): Slazer Powder (Chocolate) (200 gm) – Protein powder + Multivitamins+ Trace Elements
+- Composition differs for Vitor-OZ Tab.: old "Ofloxacin 200mg + Ornidazole 500mg" vs new "Ofloxacin 200mg + Ornidazole 500mg & Lactic Acid Bacillus" (new list used)
+- Old list only (legacy, not published): Vitor-OZ Sus. (30 ml) – Ofloxacin 50mg + Ornidazole 125mg
+- Old list only (legacy, not published): (H.S.Chopra) () – 
+- Old list only (legacy, not published): Managing Director () – 
+- Old list only (legacy, not published): McAstro Pharma () – 
