@@ -3,6 +3,7 @@ import { Inter, Manrope } from 'next/font/google'
 import './globals.css'
 import { Header } from '@/components/layout/header'
 import { Footer } from '@/components/layout/footer'
+import { FloatingActions } from '@/components/layout/floating-actions'
 import { JsonLd } from '@/components/ui/json-ld'
 import { company } from '@/data/company'
 import { organizationLd } from '@/lib/seo'
@@ -28,6 +29,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         <main id="main" className="overflow-x-clip">{children}</main>
         <Footer />
+        <FloatingActions />
       </body>
     </html>
   )
