@@ -68,16 +68,18 @@ export function Hero() {
               <p className="mt-3 text-base leading-relaxed text-white/80">A diverse portfolio across multiple therapeutic categories.</p>
               <Link href="/products" className="mt-5 flex items-center justify-between rounded-lg bg-white/15 px-4 py-3 text-[15px] font-semibold text-white transition-colors hover:bg-white/25">Browse {categories.length} categories<ArrowUpRight className="h-5 w-5" aria-hidden="true" /></Link>
             </div>
-            {/* Slide selector */}
-            <div className="mt-5 flex gap-2" role="group" aria-label="Hero image selector">
-              {slides.map((s, n) => (
-                <button key={s.label} type="button" onClick={() => setI(n)} aria-label={`Show image: ${s.label}`} aria-current={n === i} className="group flex-1 text-left">
-                  <span className="block h-[3px] w-full overflow-hidden rounded-full bg-white/25">
-                    {n === i ? <motion.span key={`p${i}`} className="block h-full bg-cyan" initial={{ width: reduce ? '100%' : '0%' }} animate={{ width: '100%' }} transition={{ duration: reduce ? 0 : INTERVAL / 1000, ease: 'linear' }} /> : <span className={`block h-full bg-white/50 transition-all ${n < i ? 'w-full' : 'w-0'}`} />}
-                  </span>
-                  <span className={`mt-2 block text-[13px] font-semibold uppercase tracking-[.1em] transition-colors ${n === i ? 'text-white' : 'text-white/55 group-hover:text-white/85'}`}>{s.label}</span>
-                </button>
-              ))}
+            {/* Slide selector: bars only, current label below (never overflows) */}
+            <div className="mt-5" role="group" aria-label="Hero image selector">
+              <div className="flex gap-2">
+                {slides.map((s, n) => (
+                  <button key={s.label} type="button" onClick={() => setI(n)} aria-label={`Show image: ${s.label}`} aria-current={n === i} className="group flex-1 py-2">
+                    <span className="block h-[3px] w-full overflow-hidden rounded-full bg-white/25">
+                      {n === i ? <motion.span key={`p${i}`} className="block h-full bg-cyan" initial={{ width: reduce ? '100%' : '0%' }} animate={{ width: '100%' }} transition={{ duration: reduce ? 0 : INTERVAL / 1000, ease: 'linear' }} /> : <span className={`block h-full bg-white/50 transition-all ${n < i ? 'w-full' : 'w-0'}`} />}
+                    </span>
+                  </button>
+                ))}
+              </div>
+              <p className="mt-1 flex items-center justify-between text-[13px] font-semibold uppercase tracking-[.1em] text-white"><span>{slides[i].label}</span><span className="text-white/55">{String(i + 1).padStart(2, '0')} / {String(slides.length).padStart(2, '0')}</span></p>
             </div>
           </motion.aside>
         </div>
