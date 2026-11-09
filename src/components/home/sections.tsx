@@ -39,7 +39,7 @@ export function Intro() {
 
         {/* Copy */}
         <div className="order-1 lg:order-2">
-          <Reveal><p className="eyebrow">Company introduction</p></Reveal>
+          <Reveal><p className="eyebrow">Company introduction · Since 1999</p></Reveal>
           <Reveal delay={0.08}><h2 className={H2}>Building Trust Through <em>Pharmaceutical Excellence</em></h2></Reveal>
           <Reveal delay={0.16}><p className={LEAD}>McASTRO PHARMA LLP is focused on developing a diverse pharmaceutical portfolio across multiple therapeutic categories. We believe in building long-term relationships through responsible business practices, quality-focused processes and a commitment to continuous growth.</p></Reveal>
           <ul className="mt-8 space-y-3">
@@ -121,13 +121,13 @@ export function MilestonesStrip() {
         </div>
         <ol className="relative mt-20 grid gap-10 md:grid-cols-4 md:gap-6">
           <span className="absolute left-0 right-0 top-[68px] hidden h-px bg-gradient-to-r from-cyan/80 via-cyan/35 to-transparent md:block" aria-hidden="true" />
-          {milestones.map((m, i) => (
+          {milestones.filter((m) => m.home).map((m, i) => (
             <Reveal key={m.title} delay={i * 0.08} className="relative">
-              <p className="font-display text-[5.5rem] italic leading-none text-transparent [-webkit-text-stroke:1.5px_rgba(140,201,242,.85)] lg:text-[6.5rem]">{m.year ?? String(i + 1).padStart(2, '0')}</p>
+              <p className={`flex h-[5.5rem] items-center font-display leading-none text-transparent lg:h-[6.5rem] [-webkit-text-stroke:1.5px_rgba(140,201,242,.85)] ${m.year.length > 5 ? 'text-[3.4rem] lg:text-[4.2rem]' : 'text-[5.5rem] lg:text-[6.5rem]'}`}>{m.year}</p>
               <span className="relative mt-3 block h-3.5 w-3.5 rounded-full bg-cyan ring-[6px] ring-cyan/25" />
               <p className="mt-6 text-[13px] font-bold uppercase tracking-[.16em] text-cyan">{m.group}</p>
               <h3 className="mt-2 font-display text-[1.7rem] leading-tight text-white">{m.title}</h3>
-              <p className="mt-3 leading-relaxed text-white/70">{m.body}</p>
+              <p className="mt-3 leading-relaxed text-white/70">{m.brief ?? m.body}</p>
             </Reveal>
           ))}
         </ol>
@@ -204,7 +204,7 @@ export function PresenceBand() {
         <div>
           <Reveal><p className="eyebrow light">Our Presence</p></Reveal>
           <Reveal delay={0.08}><h2 className={`${H2} light`}>Growing Connections, <em>Expanding Reach</em></h2></Reveal>
-          <Reveal delay={0.16}><p className="mt-6 max-w-lg text-lg leading-relaxed text-white/80 lg:text-xl">Building a strong pharmaceutical presence through business relationships, distribution connections and long-term collaboration.</p></Reveal>
+          <Reveal delay={0.16}><p className="mt-6 max-w-lg text-lg leading-relaxed text-white/80 lg:text-xl">Since 1999 our network has grown from three headquarters to Madhya Pradesh, Chhattisgarh and Maharashtra, built on business relationships and long-term collaboration.</p></Reveal>
           <Reveal delay={0.24}><Link href="/our-presence" className="btn btn-light mt-9">Discover Our Presence<ArrowRight aria-hidden="true" /></Link></Reveal>
         </div>
         <ConnectionMap />

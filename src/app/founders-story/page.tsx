@@ -3,7 +3,7 @@ import { PageHero } from '@/components/layout/page-hero'
 import { PartnerCTA } from '@/components/layout/partner-cta'
 import { Photo } from '@/components/ui/photo'
 import { ImageReveal, Reveal, Stagger, StaggerItem } from '@/components/ui/motion'
-import { founderSections, values } from '@/data/content'
+import { founderSections, peopleStory, values } from '@/data/content'
 import { photos } from '@/data/images'
 import { pageMeta } from '@/lib/seo'
 
@@ -29,10 +29,10 @@ export default function FoundersStory() {
             <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-midnight/90 to-transparent p-8 pt-14"><p className="font-display text-3xl text-white">McASTRO PHARMA LLP</p><p className="mt-1 text-sm font-semibold uppercase tracking-[.16em] text-white/75">Leadership</p></div>
           </ImageReveal>
           <div>
-            <Reveal><p className="eyebrow">01 · {beginning.title}</p></Reveal>
+            <Reveal><p className="eyebrow">{beginning.title} · 1999</p></Reveal>
             <Reveal delay={0.06}><h2 className={H2}>Where the journey <em>began.</em></h2></Reveal>
             <Reveal delay={0.12}><p className="mt-7 text-xl leading-relaxed text-navy/85">{beginning.body}</p></Reveal>
-            <Reveal delay={0.16}><p className="mt-5 text-lg leading-relaxed text-slate">This page will carry the founder’s own words, background and photograph as soon as they are approved for publication. Until then it tells the story the company can stand behind: a commitment to build with care.</p></Reveal>
+            <Reveal delay={0.16}><p className="mt-5 text-lg leading-relaxed text-slate">The first headquarters were Jabalpur, Bilaspur and Durg. From there the company kept expanding its area of operations and its product basket, year on year.</p></Reveal>
             <Reveal delay={0.2}>
               <blockquote className="mt-10 rounded-xl border-l-4 border-cyan bg-ice p-8 font-display text-[1.7rem] italic leading-snug text-navy/90">Quality products, honest relationships and steady growth: the foundations on which McASTRO PHARMA is built.</blockquote>
             </Reveal>
@@ -52,6 +52,14 @@ export default function FoundersStory() {
               <p className="mt-5 max-w-lg text-lg leading-relaxed text-white/80">{b}</p>
             </Reveal>
           ))}
+        </div>
+      </section>
+
+      {/* People */}
+      <section className="bg-ice py-14 lg:py-20">
+        <div className="wrap grid items-start gap-10 lg:grid-cols-[.9fr_1.1fr] lg:gap-20">
+          <div><Reveal><p className="eyebrow">Our people</p></Reveal><Reveal delay={0.06}><h2 className={H2}>{peopleStory.title}</h2></Reveal></div>
+          <div className="space-y-6">{peopleStory.paragraphs.map((p, i) => <Reveal key={i} delay={0.08 + i * 0.06}><p className="text-xl leading-relaxed text-slate">{p}</p></Reveal>)}</div>
         </div>
       </section>
 

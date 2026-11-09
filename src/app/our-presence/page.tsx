@@ -5,13 +5,13 @@ import { PartnerCTA } from '@/components/layout/partner-cta'
 import { ConnectionMap } from '@/components/home/sections'
 import { Photo } from '@/components/ui/photo'
 import { ImageReveal, Reveal } from '@/components/ui/motion'
-import { presenceSections } from '@/data/content'
+import { presenceRegions, presenceSections } from '@/data/content'
 import { photos } from '@/data/images'
 import { pageMeta } from '@/lib/seo'
 
 export const metadata = pageMeta({
   title: 'Connecting Through Stronger Partnerships',
-  description: 'McASTRO PHARMA LLP’s distribution approach: a connected network, meaningful business relationships and a vision for expansion across India.',
+  description: 'McASTRO PHARMA LLP’s field presence across Madhya Pradesh, Chhattisgarh and Maharashtra, built since 1999, and our approach to partnerships and expansion.',
   path: '/our-presence',
 })
 
@@ -33,9 +33,26 @@ export default function Presence() {
           </Reveal>
           <div>
             <Reveal><p className="eyebrow">Geographical presence</p></Reveal>
-            <Reveal delay={0.08}><h2 className="h-display mt-5 text-[clamp(2.4rem,3.6vw,3.3rem)]">An India-focused <em>approach.</em></h2></Reveal>
-            <Reveal delay={0.14}><p className="mt-6 text-xl leading-relaxed text-slate">We build our presence through partners: distributors, stockists and wholesalers who understand their local markets. If you would like McASTRO PHARMA in your region, we would like to hear from you.</p></Reveal>
+            <Reveal delay={0.08}><h2 className="h-display mt-5 text-[clamp(2.4rem,3.6vw,3.3rem)]">Built region by <em>region, since 1999.</em></h2></Reveal>
+            <Reveal delay={0.14}><p className="mt-6 text-xl leading-relaxed text-slate">We began with three headquarters and have grown year on year across Madhya Pradesh, Chhattisgarh and Maharashtra. If you would like McASTRO PHARMA in your region, we would like to hear from you.</p></Reveal>
             <Reveal delay={0.2}><Link href="/partner-with-us" className="btn btn-primary mt-9">Enquire About Your Region<ArrowRight aria-hidden="true" /></Link></Reveal>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-ice py-14 lg:py-20" aria-label="States and districts">
+        <div className="wrap">
+          <Reveal><p className="eyebrow">Where we work</p></Reveal>
+          <Reveal delay={0.06}><h2 className="h-display mt-5 max-w-3xl text-[clamp(2.4rem,3.6vw,3.3rem)]">Three states, <em>one growing network</em></h2></Reveal>
+          <div className="mt-10 grid gap-6 lg:grid-cols-3">
+            {presenceRegions.map((r, i) => (
+              <Reveal key={r.state} delay={i * 0.07} className="flex flex-col rounded-2xl border border-mist bg-white p-8 shadow-[0_14px_36px_-24px_rgba(9,43,76,.3)] lg:p-9">
+                <p className="text-[14px] font-bold uppercase tracking-[.16em] text-cyan">{r.since}</p>
+                <h3 className="mt-2 font-display text-[2.1rem] leading-tight text-navy">{r.state}</h3>
+                <p className="mt-3 text-lg leading-relaxed text-slate">{r.lead}</p>
+                <ul className="mt-6 flex flex-wrap gap-2">{r.places.map((p) => <li key={p} className="rounded-md bg-sky px-2.5 py-1 text-[14px] font-semibold text-royal">{p}</li>)}</ul>
+              </Reveal>
+            ))}
           </div>
         </div>
       </section>

@@ -37,7 +37,7 @@ export default function Partner() {
           {[
             { v: portfolioStats.categories, l: 'Product categories' },
             { v: portfolioStats.products, l: 'Products in the catalogue' },
-            { v: portfolioStats.forms, l: 'Dosage forms' },
+            { v: '1999', l: 'Journey began' },
           ].map((s, i) => (
             <div key={s.l} className={`px-2 py-3 text-center lg:px-8 ${i === 2 ? 'col-span-2 lg:col-span-1' : ''}`}>
               <p className="font-display text-5xl leading-none text-white lg:text-6xl">{s.v}</p>
