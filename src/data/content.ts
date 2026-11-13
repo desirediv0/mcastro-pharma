@@ -9,27 +9,27 @@ export const homeCopy = {
   support: 'Building stronger connections across the pharmaceutical industry.',
 }
 
-/** Company journey, transcribed from the client's handwritten notes. `home` marks entries shown on the home page strip (uses `brief`). */
+/** Company journey, from the client's typed "Journey of McAstro Pharma". `home` marks entries shown on the home strip (uses `brief`). */
 export interface Milestone { year: string; group: string; title: string; body: string; brief?: string; home?: boolean; chips?: string[] }
 export const milestones: Milestone[] = [
-  { year: '1999', group: 'The Beginning', title: 'A mission to make healthcare medicine affordable', brief: 'Started as a mission to provide healthcare medicine at an affordable price, with a single product.', home: true,
-    body: 'McASTRO began its journey as a mission to provide healthcare medicine at an affordable price. It started with a single product, Tab. Delphi-L, and three headquarters: Jabalpur, Bilaspur and Durg.', chips: ['Tab. Delphi-L', 'Jabalpur', 'Bilaspur', 'Durg'] },
-  { year: 'Early years', group: 'Product Basket', title: 'More products, more headquarters', brief: 'Syrup and powder joined Delphi-L, followed by antibiotics and new headquarters.',
-    body: 'The second product was Delphi-L Syrup and the third was Slazer Powder. To strengthen the portfolio, antibiotics were added, beginning with Tab. Logistic, followed by Tab. Vitor, Tab. Vitor-OZ and its suspension, and later Azam. An antimalarial segment came with the Radiant brand and its injectable, Alpha Radiant. New headquarters were opened at Balaghat and Shahdol in Madhya Pradesh.', chips: ['Delphi-L Syrup', 'Slazer Powder', 'Logistic', 'Vitor', 'Azam', 'Radiant', 'Balaghat', 'Shahdol'] },
-  { year: '2003–2006', group: 'Expansion', title: 'Smaller towns and the Mahakoushal region', brief: 'Operations reached smaller towns and most of the Mahakoushal region; Delphi-L gained an injectable and a soft gelatin capsule.',
-    body: 'In 2003 and 2004 operations expanded into smaller towns, Mandla and Seoni districts. In 2005 and 2006 most of the Mahakoushal region was covered, including Satna and Rewa. In 2005 the first product was strengthened with an injectable form of Delphi-L and the soft gelatin capsule, Delphi-L Plus.', chips: ['Mandla', 'Seoni', 'Satna', 'Rewa', 'Delphi-L Inj.', 'Delphi-L Plus'] },
-  { year: '2007', group: 'Expansion', title: 'Bundelkhand and central Madhya Pradesh', brief: 'Entry into two important regions of Madhya Pradesh: Bundelkhand and the central part of the state.',
-    body: 'In 2007 the company entered two important regions of Madhya Pradesh: Bundelkhand (Damoh, Sagar, Chhatarpur, Tikamgarh) and the central part of the state (Bhopal, Vidisha, Itarsi, Betul), and continued the journey.', chips: ['Damoh', 'Sagar', 'Chhatarpur', 'Tikamgarh', 'Bhopal', 'Vidisha', 'Itarsi', 'Betul'] },
-  { year: 'By 2010', group: 'Growing Roots', title: 'Chhattisgarh, and a team of 30+', brief: 'The team grew from 3 MSRs to 30+, and the portfolio reached 30–35 products.', home: true,
-    body: 'Not only in Madhya Pradesh: roots were expanded and strengthened in Chhattisgarh by covering almost all headquarters of the state, including Raipur, Rajnandgaon, Raigarh, Dhamtari and Ambikapur. By 2010 the journey that began with 3 MSRs had reached 30+ MSRs, and the product portfolio had grown to 30–35 products.', chips: ['Raipur', 'Rajnandgaon', 'Raigarh', 'Dhamtari', 'Ambikapur'] },
-  { year: '2010–2015', group: 'Every Corner', title: 'Available in every corner of both states', brief: 'By 2015 the entire states of Madhya Pradesh and Chhattisgarh were covered, with newer antibiotics added to the range.', home: true,
-    body: 'After 2010 the aim was to be available in every nook and corner of Madhya Pradesh and Chhattisgarh. Operations expanded in the Gwalior region (Morena, Guna, Shivpuri) and, by 2015, covered both states entirely, with entry into western Madhya Pradesh: Indore, Ratlam, Ujjain, Dewas and the border district of Neemuch. The portfolio was strengthened with the latest antibiotic molecules and line extensions such as Tab. Cefobanta and Tab. Logistic-CV.', chips: ['Gwalior', 'Morena', 'Guna', 'Shivpuri', 'Indore', 'Ratlam', 'Ujjain', 'Dewas', 'Neemuch', 'Cefobanta', 'Logistic-CV'] },
-  { year: '2017', group: 'Portfolio', title: 'Diabetes and hypertension ranges', brief: 'First basic products for diabetes and hypertension: the Maate and Telimac ranges.',
-    body: 'In 2017 basic products to manage diabetes and hypertension were introduced for the first time, with two product ranges: Tab. Maate and Tab. Telimac.', chips: ['Maate', 'Telimac'] },
-  { year: '2018', group: 'Expansion', title: 'Entering Maharashtra', brief: 'Market operations expanded into Maharashtra.', home: true,
-    body: 'In 2018 market operations expanded into the state of Maharashtra, with entry into Nagpur, Gondia, Amravati, Chandrapur and Wardha.', chips: ['Nagpur', 'Gondia', 'Amravati', 'Chandrapur', 'Wardha'] },
-  { year: '2020', group: 'Resilience', title: 'Staying together through the pandemic', brief: 'Keeping the team together through the work-from-home period.',
-    body: 'During the Corona period, the big challenge was to keep the team together. The work is fully field-based, but society had moved to work from home. In that challenging phase, long-standing colleagues supported the company in maintaining sales through a tough period.' },
+  { year: '1999', group: 'The Beginning', title: 'A mission to make healthcare medicine affordable', brief: 'Started as a mission to provide healthcare medicine at an affordable price, with a first product, Tab. Delphi-L.', home: true,
+    body: 'McASTRO started its journey as a mission: healthcare medicine at an affordable price. Way back in 1999 it began with one product, Tab. Delphi-L, launched at three headquarters: Jabalpur, Bilaspur and Durg.', chips: ['Tab. Delphi-L', 'Jabalpur', 'Bilaspur', 'Durg'] },
+  { year: 'Early years', group: 'Product Basket', title: 'A wider basket, year on year', brief: 'Delphi-L line extensions, Slazer, antibiotics and anti-malarials joined the range.',
+    body: 'McASTRO kept expanding its operational area and its product basket, year on year. The second product was a line extension of the Delphi-L group, Delphi-L Syrup, and the third was Slazer powder. To strengthen the portfolio, antibiotics were added: first Tab. Logistic, then Tab. Vitor, Tab. Vitor-OZ and its suspension. New headquarters were added to cover other parts of the state, and Delphi-L came out in an injectable form. In 2005 the soft gelatin capsule, Delphi-L Plus, followed. Keeping the needs of the market in view, the next antibiotic group was Azam, and the anti-malarial need was met with Radiant in tablet, syrup and injection forms.', chips: ['Delphi-L Syrup', 'Slazer', 'Logistic', 'Vitor', 'Vitor-OZ', 'Delphi-L Inj.', 'Delphi-L Plus', 'Azam', 'Radiant'] },
+  { year: '2003–2004', group: 'Expansion', title: 'Smaller towns of the state', brief: 'Entry into smaller towns of the state, such as Seoni and Chhindwara.',
+    body: 'In 2003 and 2004 the company entered the smaller towns of the state, such as Seoni and Chhindwara.', chips: ['Seoni', 'Chhindwara'] },
+  { year: '2005–2006', group: 'Expansion', title: 'The Mahakoushal region', brief: 'The Mahakoushal region of the state was covered completely.',
+    body: 'In 2005 and 2006 the company covered the Mahakoushal region of the state completely, including Satna, Rewa and Sidhi.', chips: ['Satna', 'Rewa', 'Sidhi'] },
+  { year: '2007', group: 'Expansion', title: 'Bundelkhand and central Madhya Pradesh', brief: 'Entry into the Bundelkhand area and central Madhya Pradesh.',
+    body: 'In 2007 the company started covering the Bundelkhand area as well as central Madhya Pradesh, such as Bhopal, Vidisha, Itarsi and Betul.', chips: ['Bundelkhand', 'Bhopal', 'Vidisha', 'Itarsi', 'Betul'] },
+  { year: 'By 2010', group: 'Growing Roots', title: 'From 3 MSRs to 30+', brief: 'The entire state of Chhattisgarh was covered; the team grew from 3 MSRs to 30+ and the portfolio to 30+ products.', home: true,
+    body: 'Not only in M.P.: to strengthen operations, the entire state of Chhattisgarh was covered. Up to 2010 the journey that started with 3 MSRs reached 30+ MSRs, and the product portfolio, too, reached 30+ products.', chips: ['Chhattisgarh', '3 → 30+ MSRs', '30+ products'] },
+  { year: 'After 2010', group: 'Every Corner', title: 'Presence in every nook and corner', brief: 'Presence in every nook and corner of the state, covering the Gwalior region.', home: true,
+    body: 'After 2010 the company made its presence felt in every nook and corner of the state, covering the Gwalior region including Shivpuri, Guna and Bhind.', chips: ['Gwalior', 'Shivpuri', 'Guna', 'Bhind'] },
+  { year: 'By 2015', group: 'Statewide', title: 'Madhya Pradesh and Chhattisgarh, entirely', brief: 'The entire states of M.P. and C.G. covered, and a new entry into the cardio and diabetic segment.', home: true,
+    body: 'Up to 2015 the company covered the entire states of M.P. and C.G., making entry into the western part of the state: the financial capital Indore, Ratlam, Ujjain, Dewas and even the border district of Neemuch. The portfolio was further strengthened with newer molecules and new therapeutics, with entry into the cardio and diabetic segments.', chips: ['Indore', 'Ratlam', 'Ujjain', 'Dewas', 'Neemuch', 'Cardio', 'Diabetic'] },
+  { year: '2017', group: 'Expansion', title: 'Vidarbha, Maharashtra', brief: 'Operations expanded into the Vidarbha part of Maharashtra.', home: true,
+    body: 'In 2017 the company expanded its operation by launching in the Vidarbha part of Maharashtra: Nagpur, Gondia, Chandrapur, Amravati and Wardha.', chips: ['Nagpur', 'Gondia', 'Chandrapur', 'Amravati', 'Wardha'] },
 ]
 
 export const whyChoose = [
@@ -44,7 +44,7 @@ export const founderSections = [
   { title: 'The Vision', body: 'To grow into a pharmaceutical company that partners and healthcare professionals trust: known for a diverse portfolio, a quality-focused approach and a clear commitment to better healthcare.' },
   { title: 'Our Philosophy', body: 'We believe long-term success comes from doing the basics well: clear product information, consistent standards, responsive communication and respect for every partner.' },
   { title: 'Our Commitment', body: 'We are committed to responsible business practices, to presenting accurate product information and to continuously improving how we work.' },
-  { title: 'Looking Ahead', body: 'The journey is still about more than new products and new headquarters: it is about adding people to a big family, and growing from strong to stronger to keep providing quality medicine at affordable prices.' },
+  { title: 'Looking Ahead', body: 'The journey is about more than new products and new headquarters: it is about adding new members to a big family, and growing from strong to stronger to keep providing quality medicine at affordable prices.' },
 ]
 
 export const values = [
@@ -56,7 +56,7 @@ export const values = [
 
 export const presenceSections = [
   { title: 'Distribution Network', body: 'McASTRO PHARMA LLP works to build a connected distribution network through distributors, stockists and wholesalers, so that its portfolio can reach healthcare channels reliably.', icon: 'network' },
-  { title: 'Regional Presence', body: 'Since 1999 our field network has grown from three headquarters (Jabalpur, Bilaspur and Durg) across Madhya Pradesh and Chhattisgarh, and since 2018 into Maharashtra.', icon: 'route' },
+  { title: 'Regional Presence', body: 'Since 1999 our field network has grown from three headquarters (Jabalpur, Bilaspur and Durg) to the entire states of Madhya Pradesh and Chhattisgarh, and since 2017 into the Vidarbha part of Maharashtra.', icon: 'route' },
   { title: 'Business Relationships', body: 'Strong, transparent and long-term relationships are the foundation of everything we do with our trade partners.', icon: 'handshake' },
   { title: 'Expansion Vision', body: 'We keep expanding area by area, together with our product basket and our team, and we welcome partners who would like McASTRO PHARMA in their region.', icon: 'trending' },
 ] as const
@@ -132,14 +132,14 @@ export const postCategories = ['All', ...Array.from(new Set(posts.map((p) => p.c
 export const peopleStory = {
   title: 'More than products and headquarters',
   paragraphs: [
-    'The journey was never only about adding new products and new headquarters. It has also been a journey of adding new people as part of a big family, to make that family go from strong to stronger and march ahead to fulfil the mission of providing quality medicine at affordable prices.',
-    'It is a matter of pride and of building relationships: members who started the journey with us at the beginning of their careers are continuing with us today.',
+    'This journey was never only about adding new products and new headquarters. It has been about adding new family members to the group, as part of a big family, to make that family go from strong to stronger and march ahead to fulfil the mission of providing quality medicine at affordable prices.',
+    'It is a matter of pride and of building relationships: the members who started the journey with us at the beginning of their careers are continuing their careers with us till today.',
   ],
 }
 
-/** Field presence, from the client's notes (headquarters/districts named there). */
+/** Field presence, from the client's typed journey (districts/regions named there). */
 export const presenceRegions = [
-  { state: 'Madhya Pradesh', since: 'Since 1999', lead: 'Covered across the state by 2015, from the Mahakoushal region to Bundelkhand, Gwalior and the western districts.', places: ['Jabalpur', 'Balaghat', 'Shahdol', 'Mandla', 'Seoni', 'Satna', 'Rewa', 'Damoh', 'Sagar', 'Chhatarpur', 'Tikamgarh', 'Bhopal', 'Vidisha', 'Itarsi', 'Betul', 'Gwalior', 'Morena', 'Guna', 'Shivpuri', 'Indore', 'Ratlam', 'Ujjain', 'Dewas', 'Neemuch'] },
-  { state: 'Chhattisgarh', since: 'Since 1999', lead: 'Started with Bilaspur and Durg; almost all headquarters of the state were covered by 2010.', places: ['Bilaspur', 'Durg', 'Raipur', 'Rajnandgaon', 'Raigarh', 'Dhamtari', 'Ambikapur'] },
-  { state: 'Maharashtra', since: 'Since 2018', lead: 'Market operations expanded into the state in 2018.', places: ['Nagpur', 'Gondia', 'Amravati', 'Chandrapur', 'Wardha'] },
+  { state: 'Madhya Pradesh', since: 'Since 1999', lead: 'The entire state was covered by 2015, from the Mahakoushal region and Bundelkhand to Gwalior and the western districts.', places: ['Jabalpur', 'Seoni', 'Chhindwara', 'Satna', 'Rewa', 'Sidhi', 'Bundelkhand', 'Bhopal', 'Vidisha', 'Itarsi', 'Betul', 'Gwalior', 'Shivpuri', 'Guna', 'Bhind', 'Indore', 'Ratlam', 'Ujjain', 'Dewas', 'Neemuch'] },
+  { state: 'Chhattisgarh', since: 'Since 1999', lead: 'Started with Bilaspur and Durg, and the entire state was covered by 2010.', places: ['Bilaspur', 'Durg'] },
+  { state: 'Maharashtra', since: 'Since 2017', lead: 'Operations were launched in the Vidarbha part of the state in 2017.', places: ['Nagpur', 'Gondia', 'Chandrapur', 'Amravati', 'Wardha'] },
 ]

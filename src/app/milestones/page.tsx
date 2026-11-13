@@ -18,7 +18,7 @@ export default function Milestones() {
   return (
     <>
       <PageHero eyebrow="Milestones" title={<>Our Journey of <em>Progress</em></>} intro="Since 1999, McASTRO has grown from one product and three headquarters into a wider portfolio and a bigger family, with one mission: quality medicine at affordable prices." crumbs={[{ name: 'Milestones', path: '/milestones' }]} photo={photos.cleanroom} position="60% 50%" />
-      <section className="on-dark bg-navy" aria-label="Journey at a glance"><div className="wrap grid grid-cols-2 gap-y-6 py-8 lg:grid-cols-4 lg:divide-x lg:divide-white/15 lg:py-10">{[['1999','Year the journey began'],['1 + 3','Product and headquarters at the start'],['3 → 30+','MSRs by 2010'],['30–35','Products by 2010']].map(([v,l]) => <div key={l} className="px-4 text-center"><p className="font-display text-4xl leading-none text-white lg:text-5xl">{v}</p><p className="mt-3 text-[14px] font-semibold uppercase tracking-[.1em] text-cyan">{l}</p></div>)}</div></section>
+      <section className="on-dark bg-navy" aria-label="Journey at a glance"><div className="wrap grid grid-cols-2 gap-y-6 py-8 lg:grid-cols-4 lg:divide-x lg:divide-white/15 lg:py-10">{[['1999','Year the journey began'],['1 + 3','Product and headquarters at the start'],['3 → 30+','MSRs by 2010'],['30+','Products by 2010']].map(([v,l]) => <div key={l} className="px-4 text-center"><p className="font-display text-4xl leading-none text-white lg:text-5xl">{v}</p><p className="mt-3 text-[14px] font-semibold uppercase tracking-[.1em] text-cyan">{l}</p></div>)}</div></section>
       <section className="py-14 lg:py-20">
         <div className="wrap">
           <ol className="relative">

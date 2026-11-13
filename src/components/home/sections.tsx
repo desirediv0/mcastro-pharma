@@ -204,7 +204,7 @@ export function PresenceBand() {
         <div>
           <Reveal><p className="eyebrow light">Our Presence</p></Reveal>
           <Reveal delay={0.08}><h2 className={`${H2} light`}>Growing Connections, <em>Expanding Reach</em></h2></Reveal>
-          <Reveal delay={0.16}><p className="mt-6 max-w-lg text-lg leading-relaxed text-white/80 lg:text-xl">Since 1999 our network has grown from three headquarters to Madhya Pradesh, Chhattisgarh and Maharashtra, built on business relationships and long-term collaboration.</p></Reveal>
+          <Reveal delay={0.16}><p className="mt-6 max-w-lg text-lg leading-relaxed text-white/80 lg:text-xl">Since 1999 our network has grown from three headquarters to all of Madhya Pradesh and Chhattisgarh and into Maharashtra, built on business relationships and long-term collaboration.</p></Reveal>
           <Reveal delay={0.24}><Link href="/our-presence" className="btn btn-light mt-9">Discover Our Presence<ArrowRight aria-hidden="true" /></Link></Reveal>
         </div>
         <ConnectionMap />

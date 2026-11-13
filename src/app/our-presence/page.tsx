@@ -11,7 +11,7 @@ import { pageMeta } from '@/lib/seo'
 
 export const metadata = pageMeta({
   title: 'Connecting Through Stronger Partnerships',
-  description: 'McASTRO PHARMA LLP’s field presence across Madhya Pradesh, Chhattisgarh and Maharashtra, built since 1999, and our approach to partnerships and expansion.',
+  description: 'McASTRO PHARMA LLP’s field presence across Madhya Pradesh, Chhattisgarh and the Vidarbha part of Maharashtra, built since 1999.',
   path: '/our-presence',
 })
 
