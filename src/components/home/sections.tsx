@@ -119,15 +119,14 @@ export function MilestonesStrip() {
           </div>
           <Link href="/milestones" className="btn btn-outline-light">Full timeline<ArrowRight aria-hidden="true" /></Link>
         </div>
-        <ol className="relative mt-20 grid gap-10 md:grid-cols-4 md:gap-6">
-          <span className="absolute left-0 right-0 top-[68px] hidden h-px bg-gradient-to-r from-cyan/80 via-cyan/35 to-transparent md:block" aria-hidden="true" />
+        <ol className="relative mt-14 grid gap-x-6 gap-y-10 sm:grid-cols-2 lg:mt-16 lg:grid-cols-5 lg:gap-x-5">
           {milestones.filter((m) => m.home).map((m, i) => (
-            <Reveal key={m.title} delay={i * 0.08} className="relative">
-              <p className={`flex h-[5.5rem] items-center font-display leading-none text-transparent lg:h-[6.5rem] [-webkit-text-stroke:1.5px_rgba(140,201,242,.85)] ${m.year.length > 5 ? 'text-[3.4rem] lg:text-[4.2rem]' : 'text-[5.5rem] lg:text-[6.5rem]'}`}>{m.year}</p>
-              <span className="relative mt-3 block h-3.5 w-3.5 rounded-full bg-cyan ring-[6px] ring-cyan/25" />
-              <p className="mt-6 text-[13px] font-bold uppercase tracking-[.16em] text-cyan">{m.group}</p>
-              <h3 className="mt-2 font-display text-[1.7rem] leading-tight text-white">{m.title}</h3>
-              <p className="mt-3 leading-relaxed text-white/70">{m.brief ?? m.body}</p>
+            <Reveal key={m.title} delay={i * 0.08} className="relative min-w-0">
+              <p className="whitespace-nowrap font-display text-[clamp(2.6rem,9vw,3.6rem)] leading-none text-transparent [-webkit-text-stroke:1.5px_rgba(140,201,242,.9)] lg:text-[clamp(2.2rem,3.1vw,3.4rem)]">{m.year}</p>
+              <div className="mt-4 flex items-center" aria-hidden="true"><span className="h-3.5 w-3.5 shrink-0 rounded-full bg-cyan ring-[6px] ring-cyan/25" /><span className="ml-1 h-px flex-1 bg-gradient-to-r from-cyan/70 to-transparent" /></div>
+              <p className="mt-5 text-[13px] font-bold uppercase tracking-[.14em] text-cyan">{m.group}</p>
+              <h3 className="mt-2 font-display text-[1.35rem] leading-tight text-white">{m.title}</h3>
+              <p className="mt-3 text-[15.5px] leading-relaxed text-white/70">{m.brief ?? m.body}</p>
             </Reveal>
           ))}
         </ol>
