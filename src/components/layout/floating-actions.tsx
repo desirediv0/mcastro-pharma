@@ -36,7 +36,7 @@ export function FloatingActions() {
   const toTop = () => window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' })
 
   return (
-    <div className="pointer-events-none fixed bottom-[max(1rem,env(safe-area-inset-bottom))] right-[max(1rem,env(safe-area-inset-right))] z-50 flex flex-col items-center gap-3 sm:bottom-6 sm:right-6">
+    <div className="pointer-events-none fixed bottom-[max(1rem,env(safe-area-inset-bottom))] right-[max(1rem,env(safe-area-inset-right))] z-40 flex flex-col items-center gap-3 sm:bottom-6 sm:right-6">
       <AnimatePresence>
         {visible && (
           <motion.button

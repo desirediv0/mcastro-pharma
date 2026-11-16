@@ -143,3 +143,28 @@ export const presenceRegions = [
   { state: 'Chhattisgarh', since: 'Since 1999', lead: 'Started with Bilaspur and Durg, and the entire state was covered by 2010.', places: ['Bilaspur', 'Durg'] },
   { state: 'Maharashtra', since: 'Since 2017', lead: 'Operations were launched in the Vidarbha part of the state in 2017.', places: ['Nagpur', 'Gondia', 'Chandrapur', 'Amravati', 'Wardha'] },
 ]
+
+/**
+ * Founder profile, from the client's "Founder story" document. The name is NOT in the source: set `name`
+ * (and `photo`, e.g. '/images/founder.jpg') only once confirmed; the page shows a placeholder until then.
+ */
+export const founder = {
+  name: null as string | null,
+  role: 'Founder, McASTRO PHARMA LLP',
+  photo: null as string | null,
+  lead: 'A career built in the field, and a company founded in 1999 with one clear objective: quality medicine at an affordable price, with performance always rewarded.',
+  highlights: [
+    { v: 'Gold medal', l: 'In graduation, Guru Nanak Dev University, Amritsar' },
+    { v: 'Age 25', l: 'Youngest area manager in his company' },
+    { v: '1999', l: 'Founded McASTRO PHARMA' },
+    { v: '3 → 75+', l: 'Field force, then and today' },
+  ],
+  steps: [
+    { tag: 'Education', title: 'A gold-medal graduate', body: 'After completing his B.Sc. (Hons), the founder began his career as a medical representative in a pharma company. A highlight of his education was a gold medal in his graduation from Guru Nanak Dev University, Amritsar.' },
+    { tag: 'A choice', title: 'Central government offer, private-sector path', body: 'While working as a medical representative he prepared for a competitive exam for a central government job and was selected as an Economic Investigator in the Ministry of Finance. On the advice of the vice president of his company, he did not join, and continued in the private sector.' },
+    { tag: 'Early rise', title: 'Youngest area manager at 25', body: 'In view of his performance and managerial capabilities, his company promoted him to area manager at the age of 25. He became the youngest area manager in the company.' },
+    { tag: 'Leadership', title: 'Turning a weak territory around', body: 'He brought a weak territory up to the national average and beyond. His top management elevated him to second-line manager and took him from Punjab to Maharashtra.' },
+    { tag: 'A turning point', title: 'Madhya Pradesh, then a company of his own', body: 'After one and a half years in Maharashtra, his management sent him to Madhya Pradesh to strengthen field operations where the company’s performance was not up to the mark. After performing that special task for one year, he left the job and founded this company in 1999.' },
+  ],
+  closing: 'The journey of McASTRO PHARMA began with 3 field force personnel and today has reached 75+. It continues to perform, to reward performance, and to contribute to the betterment of society to a larger extent.',
+}

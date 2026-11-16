@@ -1,9 +1,9 @@
-import { Compass, Eye } from 'lucide-react'
+import { Award, Compass, Eye, GraduationCap, TrendingUp, UserRound } from 'lucide-react'
 import { PageHero } from '@/components/layout/page-hero'
 import { PartnerCTA } from '@/components/layout/partner-cta'
 import { Photo } from '@/components/ui/photo'
 import { ImageReveal, Reveal, Stagger, StaggerItem } from '@/components/ui/motion'
-import { founderSections, peopleStory, values } from '@/data/content'
+import { founder, founderSections, peopleStory, values } from '@/data/content'
 import { photos } from '@/data/images'
 import { pageMeta } from '@/lib/seo'
 
@@ -21,12 +21,75 @@ export default function FoundersStory() {
     <>
       <PageHero eyebrow="Founder’s Story" title={<>The Vision Behind <em>McASTRO PHARMA</em></>} intro="Every successful journey begins with a vision and a commitment to creating lasting value. McASTRO PHARMA LLP represents a journey of pharmaceutical business development, product portfolio growth and meaningful professional relationships." crumbs={[{ name: 'Founder’s Story', path: '/founders-story' }]} photo={photos.labInterior} position="40% 50%" />
 
+      {/* The founder */}
+      <section className="py-14 lg:py-20" aria-labelledby="founder-h">
+        <div className="wrap">
+          <div className="grid gap-12 lg:grid-cols-[.8fr_1.2fr] lg:gap-20">
+            <div className="lg:sticky lg:top-32 lg:self-start">
+              <ImageReveal className="relative aspect-[4/5] overflow-hidden rounded-[22px] bg-gradient-to-br from-ice to-sky shadow-[0_40px_80px_-40px_rgba(9,43,76,.55)] ring-1 ring-mist">
+                {founder.photo ? (
+                  <img src={founder.photo} alt={founder.name ?? 'Founder of McASTRO PHARMA LLP'} className="h-full w-full object-cover" />
+                ) : (
+                  <div className="grid h-full place-items-center p-8 text-center">
+                    <div>
+                      <span className="mx-auto grid h-24 w-24 place-items-center rounded-full border-2 border-dashed border-royal/40 text-royal/60"><UserRound className="h-12 w-12" strokeWidth={1.2} aria-hidden="true" /></span>
+                      <p className="mt-5 text-[15px] font-semibold uppercase tracking-[.14em] text-royal/70">Founder photograph</p>
+                    </div>
+                  </div>
+                )}
+              </ImageReveal>
+              <div className="mt-5 rounded-2xl bg-navy p-6 text-white">
+                <p className="font-display text-2xl leading-tight">{founder.name ?? 'Our Founder'}</p>
+                <p className="mt-1 text-[15px] font-semibold uppercase tracking-[.12em] text-cyan">{founder.role}</p>
+              </div>
+            </div>
+
+            <div>
+              <Reveal><p className="eyebrow">Founder’s Story</p></Reveal>
+              <Reveal delay={0.06}><h2 id="founder-h" className="h-display mt-5 text-[clamp(2.6rem,4.2vw,3.8rem)]">From the field to <em>founding McASTRO.</em></h2></Reveal>
+              <Reveal delay={0.12}><p className="mt-6 text-xl leading-relaxed text-navy/85">{founder.lead}</p></Reveal>
+
+              <ul className="mt-8 grid grid-cols-2 gap-3">
+                {founder.highlights.map((h, i) => (
+                  <Reveal key={h.v} delay={0.14 + i * 0.05}>
+                    <li className="h-full rounded-2xl border border-mist bg-ice p-5">
+                      <p className="font-display text-3xl leading-none text-royal">{h.v}</p>
+                      <p className="mt-2 text-[15px] leading-snug text-slate">{h.l}</p>
+                    </li>
+                  </Reveal>
+                ))}
+              </ul>
+
+              <ol className="relative mt-12 space-y-8 border-l-2 border-sky pl-8 sm:pl-10">
+                {founder.steps.map((s, i) => {
+                  const I = [GraduationCap, Compass, Award, TrendingUp, UserRound][i] ?? Award
+                  return (
+                    <Reveal key={s.title} delay={i * 0.05}>
+                      <li className="relative">
+                        <span className="absolute -left-[3.15rem] top-0 grid h-11 w-11 place-items-center rounded-full bg-gradient-to-br from-royal to-cyan text-white ring-4 ring-white sm:-left-[3.4rem]"><I className="h-5 w-5" strokeWidth={1.8} aria-hidden="true" /></span>
+                        <p className="text-[14px] font-bold uppercase tracking-[.16em] text-cyan">{s.tag}</p>
+                        <h3 className="mt-1 font-display text-[1.7rem] leading-tight text-navy">{s.title}</h3>
+                        <p className="mt-3 text-lg leading-relaxed text-slate">{s.body}</p>
+                      </li>
+                    </Reveal>
+                  )
+                })}
+              </ol>
+
+              <Reveal delay={0.1}>
+                <blockquote className="mt-12 rounded-2xl border-l-4 border-cyan bg-navy p-8 text-xl leading-relaxed text-white/95 lg:p-10">{founder.closing}</blockquote>
+              </Reveal>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Introduction + beginning */}
       <section className="py-14 lg:py-20">
         <div className="wrap grid gap-16 lg:grid-cols-[.9fr_1.1fr] lg:gap-24">
           <ImageReveal className="relative aspect-[4/5] overflow-hidden rounded-[20px] shadow-[0_40px_80px_-40px_rgba(9,43,76,.55)] lg:sticky lg:top-32 lg:self-start">
             <Photo photo={photos.pharmacy} position="25% 50%" sizes="(min-width: 1024px) 40vw, 100vw" />
-            <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-midnight/90 to-transparent p-8 pt-14"><p className="font-display text-3xl text-white">McASTRO PHARMA LLP</p><p className="mt-1 text-sm font-semibold uppercase tracking-[.16em] text-white/75">Leadership</p></div>
+            <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-midnight/90 to-transparent p-8 pt-14"><p className="font-display text-3xl text-white">McASTRO PHARMA LLP</p><p className="mt-1 text-sm font-semibold uppercase tracking-[.16em] text-white/75">Since 1999</p></div>
           </ImageReveal>
           <div>
             <Reveal><p className="eyebrow">{beginning.title} · 1999</p></Reveal>

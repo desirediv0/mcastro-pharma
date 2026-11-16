@@ -45,7 +45,7 @@ export function Header() {
   }
 
   return (
-    <header className={`sticky top-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white/90 shadow-[0_1px_0_rgba(10,36,71,.08),0_12px_32px_-18px_rgba(10,36,71,.25)] backdrop-blur-xl' : 'bg-white'}`} onMouseLeave={leave}>
+    <header className={`sticky top-0 z-50 transition-all duration-300 ${scrolled && !mobile ? 'bg-white/90 shadow-[0_1px_0_rgba(10,36,71,.08),0_12px_32px_-18px_rgba(10,36,71,.25)] backdrop-blur-xl' : 'bg-white'}`} onMouseLeave={leave}>
       <div className="wrap flex h-[76px] items-center justify-between gap-4 lg:h-[92px]">
         <Logo className="w-[190px] shrink-0 sm:w-[220px] lg:w-[220px] 2xl:w-[250px]" />
 
@@ -130,8 +130,8 @@ export function Header() {
       <AnimatePresence>
         {mobile && (
           <>
-            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="fixed inset-0 top-[76px] z-40 bg-midnight/50 xl:hidden" onClick={() => setMobile(false)} />
-            <motion.nav aria-label="Mobile" initial={{ x: '100%' }} animate={{ x: 0 }} exit={{ x: '100%' }} transition={{ type: 'tween', duration: 0.32, ease: [0.22, 1, 0.36, 1] }} className="fixed bottom-0 right-0 top-[76px] z-50 w-[min(92vw,400px)] overflow-y-auto bg-white p-6 shadow-2xl xl:hidden">
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="fixed inset-0 top-[76px] z-40 bg-midnight/60 xl:hidden" onClick={() => setMobile(false)} />
+            <motion.nav aria-label="Mobile" initial={{ x: '100%' }} animate={{ x: 0 }} exit={{ x: '100%' }} transition={{ type: 'tween', duration: 0.32, ease: [0.22, 1, 0.36, 1] }} className="fixed bottom-0 right-0 top-[76px] z-50 w-[min(92vw,400px)] overflow-y-auto overscroll-contain bg-white p-6 pb-24 shadow-2xl xl:hidden">
               <ul className="divide-y divide-mist">
                 {navMain.map((n) => {
                   const key: Open = n.label === 'About Us' ? 'about' : n.label === 'Categories' ? 'products' : null
